@@ -15,10 +15,10 @@
     
     [super viewDidLoad];
     
-    self.service = @"service";
-    self.account = @"account";
-    self.secret = @"helloworld";
-    self.descriptionText = @"mydescription";
+    self.service = @"service1";
+    self.account = @"account1";
+    self.secret = @"helloworld1";
+    self.descriptionText = @"mydescription1";
     
     NSLog(@"[service] %@", self.service);
     NSLog(@"[account] %@", self.account);
@@ -154,7 +154,7 @@
     NSDictionary* query = @{
                             (__bridge id) kSecClass: (__bridge id) kSecClassGenericPassword,
                             (__bridge id) kSecAttrService : service,
-                            (__bridge id)kSecAttrAccount :account
+                            (__bridge id) kSecAttrAccount :account
                             };
     
     
